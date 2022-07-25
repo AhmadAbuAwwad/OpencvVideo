@@ -26,7 +26,7 @@ void readImage(shared_ptr<Mat> matPtr)
         while (true)
         {
             mtx1.lock();     
-
+	    cap.read(*matPtr); 
             cout << "1- read" << endl;
             imageCounter++;
             mtx2.unlock();
